@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Client Portal Form</title>
+</head>
+<body>
+    <h1>Client Portal Form</h1>
+    <form id="clientForm" method="post" action="/submit">
+        <!-- Personal Details -->
+        <h2>Personal Details</h2>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="cellNo">Cell No:</label>
+        <input type="tel" id="cellNo" name="cellNo" required><br><br>
+
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address" required><br><br>
+
+        <h3>Next of Kin</h3>
+        <label for="nextOfKinName">Name:</label>
+        <input type="text" id="nextOfKinName" name="nextOfKinName" required><br><br>
+        
+        <label for="nextOfKinEmail">Email:</label>
+        <input type="email" id="nextOfKinEmail" name="nextOfKinEmail" required><br><br>
+
+        <label for="nextOfKinCellNo">Cell No:</label>
+        <input type="tel" id="nextOfKinCellNo" name="nextOfKinCellNo" required><br><br>
+
+        <label for="nextOfKinAddress">Address:</label>
+        <input type="text" id="nextOfKinAddress" name="nextOfKinAddress" required><br><br>
+
+        <h2>Client Type</h2>
+        <label for="clientType">Select Client Type:</label>
+        <select id="clientType" name="clientType" required>
+            <option value="Account Holder">Account Holder</option>
+            <option value="Silent Investor">Silent Investor</option>
+            <option value="Partner">Partner</option>
+        </select><br><br>
+
+        <h2>Contract Period</h2>
+        <label for="contractPeriod">Contract Period:</label>
+        <select id="contractPeriod" name="contractPeriod" required>
+            <option value="New Contract">New Contract</option>
+            <option value="Re-New">Re-New</option>
+            <option value="Close">Close</option>
+        </select><br><br>
+
+        <label for="contractDate">Contract Date:</label>
+        <input type="date" id="contractDate" name="contractDate" required><br><br>
+
+        <!-- Other Fields (Company Details, Marketplace, Investment, etc.) -->
+
+        <!-- Submit Button -->
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

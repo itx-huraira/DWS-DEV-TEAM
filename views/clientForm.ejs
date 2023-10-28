@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client Portal</title>
+</head>
+<body>
+    <h1>Client Portal</h1>
+    <form action="/submit" method="post">
+        <h1>Personal Details</h1>
+        <input type="" name="name" placeholder="enter your name">
+        <br><br>
+        <input type="text" name="cellNo" placeholder="enter you phone no"> <br><br>
+        <input type="text" name="address" placeholder="enter your address"><br><br>
+        <hr>
+        <h3>Next of kin Details</h3>
+        <select name="nextKin">
+        <option value="parent">Parent</option>
+        <option value="wife">Wife</option>
+        <option value="child">Child</option>
+        </select><br><br>
+        <input type="text" name="kinName" placeholder="enter name"><br><br>
+        <input type="text" name="kinCellNo" placeholder="enter kin cell no"><br><br>
+        <input type="text" name="kinAddress" placeholder="enter in Address"><br><br>
+        <hr>
+        <!-- Account type -->
+        <h3>Account types</h3>
+        <select name="AccountRole" id="">
+            <option value="AccountHolder">Account Holder</option>
+            <option value="SiletnInvestor"> Silent Investor</option>
+            <option value="Partner"> Partner</option><br><br>
+        </select>
+        <hr>
+        <h3>Contract period</h3>
+        <select name="contract" id="">
+            <option value="New contract">New contract</option>
+            <option value="Re-New">Re-New</option><br><br>
+        </select>
+        <hr>
+        <h2>Comapny Details</h2>
+        <input type="text" name="comapnyName" placeholder="comapny Name"><br><br>
+        <input type="email" name="comapnyEmail" placeholder="company email"> <br><br>
+        <input type="text" name="companyCellno" placeholder="comapny cellno"><br><br>
+        <hr>
+        <h2>Market Place</h2>
+        <input type="checkbox" name="marketplace" value="Amazon">Amazon
+        <input type="checkbox" name="marketplace" value="eby">eby
+        <input type="checkbox" name="marketplace" value="etsy">etsy
+        <input type="checkbox" name="marketplace" value="WallMart">WallMart
+        <hr>
+        <h2>investment:</h2>
+        <input type="checkbox" name="investment" value="Account" >Account
+        <input type="checkbox" name="investment" value="Cash" >Cash
+        <input type="checkbox" name="investment" value="Inventory" >Inventory
+        <br><br><hr>
+        <button>submit</button>
+    </form>
+</body>
+</html>
